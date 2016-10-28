@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     private void setupRecyclerView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView_main_actv);
         mRecyclerData = new ArrayList<>();
-        // Setting the Recycler data.
+        // Setting the dummy Recycler data.
         recyclerListData();
 
         mRecyclerAdapter = new RecyclerAdapter(mRecyclerData, resetAdapter, this);
@@ -89,7 +89,13 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
      */
     public void recyclerListData() {
         try {
-            mRecyclerData.add(new Contact("Ayeshu", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Ashish", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Avinash", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Arya", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Allen", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Anisa", "1232354234", "c@n.com", "invited", true));
+            mRecyclerData.add(new Contact("Benny", "1232354234", "c@n.com", "invited", false));
+            mRecyclerData.add(new Contact("Bharath", "1232354234", "c@n.com", "invited", false));
             mRecyclerData.add(new Contact("Bhanu", "1232354234", "c@n.com", "invited", false));
             mRecyclerData.add(new Contact("Bhavesh", "1232354234", "c@n.com", "invited", false));
             mRecyclerData.add(new Contact("Cyril", "1232354234", "c@n.com", "invited", false));
